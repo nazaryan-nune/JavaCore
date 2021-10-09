@@ -1,5 +1,4 @@
 package Chapter3;
-
 //Ցուցադրել միաչափ զանգվածի կիրառությունը
 public class Array {
     public static void main(String[] args) {
