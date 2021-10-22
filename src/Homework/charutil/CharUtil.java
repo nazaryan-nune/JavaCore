@@ -45,7 +45,7 @@ public class CharUtil {
         //char[] bolola = {'b','a',b','o','l','a'};
         ////Տպում ենք true եթե տեքստը պարունակում է bob բառը, բայց o-ի տեղը կարող է լինել ցանկացած սինվոլ։
 
-        char[] bolol = {'b', 'a', 'b', 'o', 'l', 'a' };
+        char[] bolol = {'b', 'b', 'b', 'o', 'l', 'b' };
         boolean arraySymbolsContains = false;
         for (int i = 0; i < bolol.length; i++) {
             if (bolol[i] == 'b' && bolol[i + 2] == 'b') {
@@ -77,11 +77,9 @@ public class CharUtil {
 
         System.out.print("result զանգվածի տարրերն են՝   ");
         for (int m = numberFirstSpaces; m < (text.length - numberRecentSpaces); m++) {
-            if (text[m] != ' ' || text[m] == ' ') {
-                result[n] = text[m];
-                System.out.print(result[n]);
-                n++;
-            }
+            result[n] = text[m];
+            System.out.print(result[n]);
+            n++;
         }
         System.out.println();
     }
