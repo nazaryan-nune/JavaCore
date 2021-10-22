@@ -1,6 +1,6 @@
 package Homework.charutil;
 
-public class CharUtil {
+public class CharUtils {
     public static void main(String[] args) {
         char[] bolola = {'b', 'o', 'l', 'o', 'l', 'a' };
         System.out.print("Զանգվածի տարրերն են՝ ");
@@ -86,3 +86,5 @@ public class CharUtil {
         System.out.println();
     }
 }
+
+
