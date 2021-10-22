@@ -45,12 +45,11 @@ public class CharUtil {
         //char[] bolola = {'b','a',b','o','l','a'};
         ////Տպում ենք true եթե տեքստը պարունակում է bob բառը, բայց o-ի տեղը կարող է լինել ցանկացած սինվոլ։
 
-        char[] bolol = {'b', 'b', 'b', 'o', 'l', 'b' };
+        char[] bolol = {'b', 'a', 'b', 'o', 'l', 'a' };
         boolean arraySymbolsContains = false;
-        for (int i = 0; i < bolol.length; i++) {
+        for (int i = 0; i < bolol.length - 2; i++) {
             if (bolol[i] == 'b' && bolol[i + 2] == 'b') {
                 arraySymbolsContains = true;
-                break;
             }
         }
         System.out.println(arraySymbolsContains + "      //քանի որ զանգվածը <<bob>> բառը պարունակում է" + "\n");
