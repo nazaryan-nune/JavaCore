@@ -34,30 +34,5 @@ public class CharUtil {
             System.out.println("false" + "      //ly -- զանգվածի վերջին տարրերը չեն:" + '\n');
         }
 
-        //4)
-        char[] bolol = {'b', 'a', 'b', 'o', 'l', 'a'};
-        int cc = 0;
-        for (int i = 0; i < bolol.length; i++) {
-            if (bolol[i] == 'o' || bolol[i] == 'l' || bolol[i] == 'a') {
-                cc++;
-            }
-        }
-        if (cc >= 3) {
-            System.out.println("true" + "     ola տեքստի սիմվոլները զանգվածում առկա են։" + '\n');
-        } else {
-            System.out.println("false" + "     ola տեքստի սիմվոլները զանգվածում առկա չեն։" + '\n');
-        }
-
-
-        //5)
-        char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
-        char[] result = new char[text.length];
-
-        for (int i = 0; i < text.length; i++) {
-            if (text[i] == 'b' || text[i] == 'a' || text[i] == 'r' || text[i] == 'e' || text[i] == 'v') ;
-            result[i] = text[i];
-        }
-        System.out.print("result զանգվածի տարրերն են՝ ");
-        System.out.println(result);
     }
 }
