@@ -38,12 +38,13 @@ public class CharUtil {
         if (bolola[bolola.length - 2] == 'l' && bolola[bolola.length - 1] == 'y') {
             System.out.println("true" + " `զանգվածի վերջին տարրերն են ly" + '\n');
         } else {
-            System.out.println("false" + "      //ly -- զանգվածի վերջին տարրերը չեն:" + '\n');
+            System.out.println("false" + "      //քանի որ ly -- զանգվածի նախավերջին և վերջին տարրերը չեն:" + '\n');
         }
 
         //4)Ունենք հետևյալ մասիվը՝
         //char[] bolola = {'b','a',b','o','l','a'};
         ////Տպում ենք true եթե տեքստը պարունակում է bob բառը, բայց o-ի տեղը կարող է լինել ցանկացած սինվոլ։
+
         char[] bolol = {'b', 'a', 'b', 'o', 'l', 'a' };
         boolean arraySymbolsContains = false;
         for (int i = 0; i < bolol.length; i++) {
@@ -52,13 +53,13 @@ public class CharUtil {
                 break;
             }
         }
-        System.out.println(arraySymbolsContains);
+        System.out.println(arraySymbolsContains + "      //քանի որ զանգվածը <<bob>> բառը պարունակում է" + "\n");
 
-        //5)Ունենք հետևյալ մասիվը՝
-        //char[] text = {' ',' ','b','a','r','e','v',' ',' '};
-        //Տվյալ օրինակում կարող ենք կամայական քանակի պռաբելներ դնել թե սկզբից թե վերջից չկենտրոնանաք որ երկու հատ է դրված։
-        // Պետք է գրել կոդ, որը text մասիվից կստանա char[] result մասիվ, որը կլինի նույն տեքստը, առանց պռաբելների(իրար կողք կտպի barev)։
+        //5)
         char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' ' };
+
+     //   System.out.print("result զանգվածի տարրերն են՝ ");
+
 
     }
 }
