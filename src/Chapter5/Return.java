@@ -3,9 +3,16 @@ package Chapter5;
 //Ցուցադրել return օպերատորի կիրառությունը
 public class Return {
     public static void main(String[] args) {
-        boolean t = true;
-        System.out.println("Дo возврата.");
-        if (t) return; // возврат в вызывающий код
-        System.out.println("Этот оператор выполняться не будет.");
+        outer:
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (j > i) {
+                    System.out.println();
+                    continue outer;
+                }
+                System.out.print(" " + (i * j));
+            }
+        }
+        System.out.println();
     }
 }
