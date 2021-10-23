@@ -47,7 +47,7 @@ public class CharUtil {
 
         char[] bolol = {'b', 'a', 'b', 'o', 'l', 'a' };
         boolean arraySymbolsContains = false;
-        for (int i = 0; i < bolol.length - 2; i++) {
+        for (int i = 0; i < bolol.length - 1; i++) {
             if (bolol[i] == 'b' && bolol[i + 2] == 'b') {
                 arraySymbolsContains = true;
             }
