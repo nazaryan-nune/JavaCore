@@ -1,4 +1,4 @@
-package հomework.arrayutil;
+package homework.arrayUtil;
 
 public class ArrayUtil {
     public static void main(String[] args) {
@@ -13,29 +13,29 @@ public class ArrayUtil {
 
 
         //2. Տպել մասիվի ամենամեծ թիվը
-        int arrayMaxNumber = array[0];
+        int max = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] > arrayMaxNumber) {
-                arrayMaxNumber = array[i];
+            if (array[i] > max) {
+                max = array[i];
             }
         }
-        System.out.println("Մասիվի ամենամեծ թիվը` " + arrayMaxNumber + '\n');
+        System.out.println("Մասիվի ամենամեծ թիվը` " + max + '\n');
 
 
         //3․ Տպել մասիվի ամենափոքր թիվը
-        int arrayMinNumber = array[0];
+        int min = array[0];
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < arrayMinNumber) {
-                arrayMinNumber = array[i];
+            if (array[i] < min) {
+                min = array[i];
             }
         }
-        System.out.println("Մասիվի ամենափոքր թիվը` " + arrayMinNumber + '\n');
+        System.out.println("Մասիվի ամենափոքր թիվը` " + min + '\n');
 
 
         //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
         System.out.print("Մասիվի զույգ էլեմենտներն են՝ ");
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
+            if (array[i] != 0 && array[i] % 2 == 0) {
                 System.out.print(array[i] + " ");
             }
         }
@@ -55,7 +55,7 @@ public class ArrayUtil {
         //6. Տպել զույգերի քանակը
         int evenNumbersAmount = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
+            if (array[i] != 0 && array[i] % 2 == 0) {
                 evenNumbersAmount++;
             }
         }
