@@ -36,22 +36,6 @@ public class ArrayUtil {
         return min;
     }
 
-//    //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
-//
-//    int arrayEven(int[] array) {
-//        System.out.print("Մասիվի զույգ էլեմենտներն են՝ ");
-//        int[] even = new int[12];
-//        int i, j = 0;
-//        for (i = 0; i < array.length; i++) {
-//            if (array[i] % 2 == 0) {
-//                even[j] = array[i];
-//            }
-//        }
-//        for (int k = 0; k < even.length; k++) {
-//
-//        }
-//    }
-
 
     //6. Տպել զույգերի քանակը
 
@@ -91,7 +75,7 @@ public class ArrayUtil {
 
     //9․ Տպել մասիվի էլեմենտների գումարը
 
-    int arrayElementsSum (int[] array) {
+    int arrayElementsSum(int[] array) {
         int arrayElementsSum = 0;
         for (int i = 0; i < array.length; i++) {
             arrayElementsSum += array[i];
@@ -99,20 +83,4 @@ public class ArrayUtil {
         return arrayElementsSum;
     }
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
