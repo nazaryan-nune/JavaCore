@@ -37,6 +37,29 @@ public class ArrayUtil {
     }
 
 
+    //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
+    void even(int[] array) {
+        System.out.print("Մասիվի զույգ էլեմենտներն են՝ ");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != 0 && array[i] % 2 == 0) {
+                System.out.print(array[i] + " ");
+            }
+        }
+    }
+
+
+    //5․ Տպել մասիվի բոլոր կենտ էլեմենտները
+    void odd(int[] array) {
+        System.out.print("Մասիվի կենտ էլեմենտներն են՝ ");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                System.out.print(array[i] + " ");
+            }
+        }
+
+    }
+
+
     //6. Տպել զույգերի քանակը
 
     int evenNumbersAmount(int[] array) {

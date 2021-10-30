@@ -31,6 +31,16 @@ public class ArrayUtilTest {
         }
 
 
+        //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
+        aU.even(array);
+        System.out.println();
+
+
+        //5․ Տպել մասիվի բոլոր կենտ էլեմենտները
+        aU.odd(array);
+        System.out.println();
+
+
         //6.Տպել երկու մասիվներից, որն է պարունակում զույգ թվերի մեծ քանակ
         int arrayEvenNumbers = aU.evenNumbersAmount(array);
         int array2EvenNumbers = aU.evenNumbersAmount(array2);
