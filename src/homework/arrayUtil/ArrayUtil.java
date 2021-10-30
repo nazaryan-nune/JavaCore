@@ -1,90 +1,118 @@
 package homework.arrayUtil;
 
 public class ArrayUtil {
-    public static void main(String[] args) {
-        int[] array = {2, -1, 5, 8, -10, 32, -22, 11, -12, 77};
 
-        //1.Տպել մասիվի բոլոր էլեմենտները
+    //1.Տպել մասիվի բոլոր էլեմենտները
+
+    void printArrayElements(int[] array) {
         System.out.print("Մասիվի էլեմենտներն են՝ ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
-        System.out.println('\n');
+        System.out.println();
+    }
 
+    //2. Տպել մասիվի ամենամեծ թիվը
 
-        //2. Տպել մասիվի ամենամեծ թիվը
+    int arrayMax(int[] array) {
         int max = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
             }
         }
-        System.out.println("Մասիվի ամենամեծ թիվը` " + max + '\n');
+        return max;
+    }
 
+    //3․ Տպել մասիվի ամենափոքր թիվը
 
-        //3․ Տպել մասիվի ամենափոքր թիվը
+    int arrayMin(int[] array) {
         int min = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
             }
         }
-        System.out.println("Մասիվի ամենափոքր թիվը` " + min + '\n');
+        return min;
+    }
+
+//    //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
+//
+//    int arrayEven(int[] array) {
+//        System.out.print("Մասիվի զույգ էլեմենտներն են՝ ");
+//        int[] even = new int[12];
+//        int i, j = 0;
+//        for (i = 0; i < array.length; i++) {
+//            if (array[i] % 2 == 0) {
+//                even[j] = array[i];
+//            }
+//        }
+//        for (int k = 0; k < even.length; k++) {
+//
+//        }
+//    }
 
 
-        //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
-        System.out.print("Մասիվի զույգ էլեմենտներն են՝ ");
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] != 0 && array[i] % 2 == 0) {
-                System.out.print(array[i] + " ");
-            }
-        }
-        System.out.println('\n');
+    //6. Տպել զույգերի քանակը
 
-
-        //5․ Տպել մասիվի բոլոր կենտ էլեմենտները
-        System.out.print("Մասիվի կենտ էլեմենտներն են՝ ");
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
-                System.out.print(array[i] + " ");
-            }
-        }
-        System.out.println('\n');
-
-
-        //6. Տպել զույգերի քանակը
+    int evenNumbersAmount(int[] array) {
         int evenNumbersAmount = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] != 0 && array[i] % 2 == 0) {
                 evenNumbersAmount++;
             }
         }
-        System.out.println("Մասիվի զույգ էլեմենտների քանակը՝ " + evenNumbersAmount + '\n');
+        return evenNumbersAmount;
+    }
 
 
-        //7․ Տպել կենտերի քանակը
+    //7․ Տպել կենտերի քանակը
+    int oddNumbersAmount(int[] array) {
         int oddNumbersAmount = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
                 oddNumbersAmount++;
             }
         }
-        System.out.println("Մասիվի կենտ էլեմենտների քանակը՝ " + oddNumbersAmount + '\n');
+        return oddNumbersAmount;
+    }
 
 
-        //8․ Տպել մասիվի բոլոր թվերի միջին թվաբանականը
-        double arrayArithmeticAverage = 0;
+    //8․ Տպել մասիվի բոլոր թվերի միջին թվաբանականը
+
+    double arrayArithmeticAverage(int[] array) {
+        double average = 0;
         for (int i = 0; i < array.length; i++) {
-            arrayArithmeticAverage += array[i];
+            average += array[i];
         }
-        System.out.println("Մասիվի բոլոր թվերի միջին թվաբանականը` " + arrayArithmeticAverage / array.length + '\n');
+        return average;
+    }
 
 
-        //9․ Տպել մասիվի էլեմենտների գումարը
+    //9․ Տպել մասիվի էլեմենտների գումարը
+
+    int arrayElementsSum (int[] array) {
         int arrayElementsSum = 0;
         for (int i = 0; i < array.length; i++) {
             arrayElementsSum += array[i];
         }
-        System.out.println("Մասիվի էլեմենտների գումարը` " + arrayElementsSum);
+        return arrayElementsSum;
     }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
