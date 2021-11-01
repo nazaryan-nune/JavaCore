@@ -40,6 +40,7 @@ public class ArrayUtilTest {
 
         System.out.println();
 
+
         //5․ Տպել մասիվի բոլոր կենտ էլեմենտները
         int[] oddNumbers = aU.onlyOdds(array);
         System.out.print("Մասիվի կենտ էլեմենտներն են՝ ");
@@ -48,6 +49,7 @@ public class ArrayUtilTest {
         }
 
         System.out.println();
+
 
         //6.Տպել երկու մասիվներից, որն է պարունակում զույգ թվերի մեծ քանակ
         int arrayEvenNumbers = aU.evenNumbersAmount(array);
