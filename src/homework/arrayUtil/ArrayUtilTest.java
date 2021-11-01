@@ -32,14 +32,22 @@ public class ArrayUtilTest {
 
 
         //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
-        aU.even(array);
-        System.out.println();
+        int[] evenNumbers = aU.onlyEvens(array);
+        System.out.print("Մասիվի զույգ էլեմենտներն են՝ ");
+        for (int i : evenNumbers) {
+            System.out.print(i + " ");
+        }
 
+        System.out.println();
 
         //5․ Տպել մասիվի բոլոր կենտ էլեմենտները
-        aU.odd(array);
-        System.out.println();
+        int[] oddNumbers = aU.onlyOdds(array);
+        System.out.print("Մասիվի կենտ էլեմենտներն են՝ ");
+        for (int i : oddNumbers) {
+            System.out.print(i + " ");
+        }
 
+        System.out.println();
 
         //6.Տպել երկու մասիվներից, որն է պարունակում զույգ թվերի մեծ քանակ
         int arrayEvenNumbers = aU.evenNumbersAmount(array);

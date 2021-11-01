@@ -38,25 +38,44 @@ public class ArrayUtil {
 
 
     //4․ Տպել մասիվի բոլոր զույգ էլեմենտները
-    void even(int[] array) {
-        System.out.print("Մասիվի զույգ էլեմենտներն են՝ ");
+
+    int[] onlyEvens(int[] array) {
+        int count = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] != 0 && array[i] % 2 == 0) {
-                System.out.print(array[i] + " ");
+                count++;
             }
         }
+        int[] evenNumbers = new int[count];
+        int index = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != 0 && array[i] % 2 == 0) {
+                evenNumbers[index++] = array[i];
+            }
+        }
+        return evenNumbers;
     }
 
 
     //5․ Տպել մասիվի բոլոր կենտ էլեմենտները
-    void odd(int[] array) {
-        System.out.print("Մասիվի կենտ էլեմենտներն են՝ ");
+
+    int[] onlyOdds(int[] array) {
+
+        int count = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 != 0) {
-                System.out.print(array[i] + " ");
+//                System.out.println(array[i]);
+                count++;
             }
         }
-
+        int[] oddNumbers = new int[count];
+        int index = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                oddNumbers[index++] = array[i];
+            }
+        }
+        return oddNumbers;
     }
 
 
