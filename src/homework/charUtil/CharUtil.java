@@ -25,10 +25,10 @@ public class CharUtil {
     //3․ Տպել true, եթե մասիվը վերջանում է ly-ով, եթե ոչ՝ false
 
     boolean findSymbols(char[] bolola, char m, char n) {
-        boolean result =false;
+        boolean result = false;
 
         if (bolola[bolola.length - 2] == m && bolola[bolola.length - 1] == n) {
-            result=true;
+            result = true;
         }
         return result;
     }
@@ -51,7 +51,7 @@ public class CharUtil {
 
     //5. Պետք է գրել կոդ, որը text մասիվից կստանա char[] result մասիվ, որը կլինի նույն տեքստը, առանց պռաբելների(իրար կողք կտպի barev)
 
-    void newArray(char[] text) {
+    char[] trim(char[] text) {
         int starIndex = 0;
         int endIndex = text.length - 1;
 
@@ -66,8 +66,6 @@ public class CharUtil {
         for (int i = starIndex; i <= endIndex; i++) {
             result[resultIndex++] = text[i];
         }
-        for (int i = 0; i < result.length; i++) {
-            System.out.print(result[i]);
-        }
+        return result;
     }
 }
