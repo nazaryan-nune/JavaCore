@@ -4,45 +4,45 @@ public class PracticeHomeworkTest {
     public static void main(String[] args) {
         PracticeHomework homework = new PracticeHomework();
         //փոխակերպել տրված րոպեն վայրկյանի
-        int minutes = 15;
-        System.out.println(minutes + " րոպեն " + homework.convert(minutes) + " վայրկյան է։");
+
+        System.out.println(15 + " րոպեն " + homework.convert(15) + " վայրկյան է։");
 
 
 //ընդունել տարին, վերադարձնել օրերի քանակը
-        int years = 7;
-        System.out.println(years + " տարին " + homework.calcAge(years) + " օր է։");
+
+        System.out.println(7 + " տարին " + homework.calcAge(7) + " օր է։");
 
 
 //վերադարձնել տրված թվի հաջորդ թիվը
-        int number = 33;
-        System.out.println(number + "-ի հաջորդ թիվը " + homework.nextNumber(number) + "-ն է։");
+
+        System.out.println(33 + "-ի հաջորդ թիվը " + homework.nextNumber(33) + "-ն է։");
 
 
 //վերադարձնել true եթե տրված a և b թվերը իրար հավասար են, եթե ոչ՝ false
-        int a = 15, b = 27;
-        if (homework.isSameNum(a, b)) {
-            System.out.println(homework.isSameNum(a, b) + "     քանի որ a=" + a + " և b=" + b + " թվերը " + "հավասար են։");
+
+        if (homework.isSameNum(15, 27)) {
+            System.out.println(homework.isSameNum(15, 27) + "     քանի որ a=" + 15 + " և b=" + 27 + " թվերը " + "հավասար են։");
         } else {
-            System.out.println(homework.isSameNum(a, b) + "     քանի որ a=" + a + " և b=" + b + " թվերը " + "հավասար չեն։");
+            System.out.println(homework.isSameNum(15, 27) + "     քանի որ a=" + 15 + " և b=" + 27 + " թվերը " + "հավասար չեն։");
         }
 
 
 //վերադարձնել true - եթե թիվը փոքր կամ հավասար է 0 - ին։
 //մնացած դեպքերում վերադարձնել false
-        int number2 = -15;
-        if (homework.lessThanOrEqualToZero(number2)) {
-            System.out.println(homework.lessThanOrEqualToZero(number2) + "      քանի որ " + number2 + "<0:");//==??
+
+        if (homework.lessThanOrEqualToZero(-15)) {
+            System.out.println(homework.lessThanOrEqualToZero(-15) + "      քանի որ " + -15 + "<0:");//==??
         } else {
-            System.out.println(homework.lessThanOrEqualToZero(number2) + "     քանի որ " + number2 + ">0:");
+            System.out.println(homework.lessThanOrEqualToZero(-15) + "     քանի որ " + -15 + ">0:");
         }
 
 
 //վերադարձնել ընդունող բուլյանի ժխտված արժեքը
-        boolean value = false;
-        if (homework.reverseBool(value)) {
-            System.out.println(homework.reverseBool(value) + "      քանի որ false-ի ժխտված արժեքը true-ն է։");
+
+        if (homework.reverseBool(false)) {
+            System.out.println(homework.reverseBool(false) + "      քանի որ false-ի ժխտված արժեքը true-ն է։");
         } else {
-            System.out.println(homework.reverseBool(value) + "      քանի որ true-ի ժխտված արժեքը false-ն է։");
+            System.out.println(homework.reverseBool(false) + "      քանի որ true-ի ժխտված արժեքը false-ն է։");
         }
 
 
