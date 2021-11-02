@@ -45,7 +45,7 @@ public class ArrayUtil {
         //5․ Տպել մասիվի բոլոր կենտ էլեմենտները
         System.out.print("Մասիվի կենտ էլեմենտներն են՝ ");
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
+            if (array[i] != 0 && array[i] % 2 != 0) {
                 System.out.print(array[i] + " ");
             }
         }
@@ -65,7 +65,7 @@ public class ArrayUtil {
         //7․ Տպել կենտերի քանակը
         int oddNumbersAmount = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
+            if (array[i] != 0 && array[i] % 2 != 0) {
                 oddNumbersAmount++;
             }
         }

@@ -63,15 +63,14 @@ public class ArrayUtil {
 
         int count = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
-//                System.out.println(array[i]);
+            if (array[i] != 0 && array[i] % 2 != 0) {
                 count++;
             }
         }
         int[] oddNumbers = new int[count];
         int index = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
+            if (array[i] != 0 && array[i] % 2 != 0) {
                 oddNumbers[index++] = array[i];
             }
         }
@@ -96,7 +95,7 @@ public class ArrayUtil {
     int oddNumbersAmount(int[] array) {
         int oddNumbersAmount = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 != 0) {
+            if (array[i] != 0 && array[i] % 2 != 0) {
                 oddNumbersAmount++;
             }
         }
