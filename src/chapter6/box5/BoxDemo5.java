@@ -1,4 +1,4 @@
-package chapter6;
+package chapter6.box5;
 
 public class BoxDemo5 {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class BoxDemo5 {
 
         // Box կլասի յուրաքանչյուր օբյեկտ ինիցիալիզացնել
         myBox1.setDim(10, 20, 15);
-        myBox1.setDim(3, 6, 9);
+        myBox2.setDim(3, 6, 9);
 
         //ստանալ առաջին զուգահեռագծի ծավալը
         vol = myBox1.volume();

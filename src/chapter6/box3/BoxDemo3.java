@@ -1,4 +1,4 @@
-package chapter6;
+package chapter6.box3;
 
 public class BoxDemo3 {
     public static void main(String[] args) {
@@ -6,9 +6,9 @@ public class BoxDemo3 {
         Box myBox2 = new Box();
 
         // myBox1 օբյեկտի փոփոխականներին վերագրել արժեքներ
-        myBox2.width = 10;
-        myBox2.height = 20;
-        myBox2.depth = 15;
+        myBox1.width = 10;
+        myBox1.height = 20;
+        myBox1.depth = 15;
 
         // myBox2 օբյեկտի փոփոխականներին վերագրել արժեքներ
         myBox2.width = 3;

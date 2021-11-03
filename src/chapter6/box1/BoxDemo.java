@@ -1,4 +1,4 @@
-package chapter6;
+package chapter6.box1;
 
 //Այս կլասում հայտարարվում է օբյեկտ Box տիպի
 
@@ -12,6 +12,7 @@ public class BoxDemo {
         myBox.width = 10;
         myBox.height = 20;
         myBox.depth = 15;
+
         //հաշվել զուգահեռագծի ծավալը
         vol = myBox.width * myBox.height * myBox.depth;
         System.out.println("Ծավալը հավասար է՝ " + vol);
