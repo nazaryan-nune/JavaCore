@@ -13,9 +13,9 @@ public class DynamicArray {
     public void add(int value) {
         if (size == array.length) {
             extend();
-            if (array.length > size) {
-                array[size++] = value;
-            }
+//            if (array.length > size) {
+//                array[size++] = value;
+//            }
         } else {
             array[size++] = value;
         }
@@ -27,8 +27,8 @@ public class DynamicArray {
 
     private void extend() {
         int[] newArray = new int[array.length + 10];
-        for (int i = 0, j = 0; i < array.length; i++) {
-            newArray[j++] = array[i];
+        for (int i = 0; i < array.length; i++) {
+            newArray[i] = array[i];
         }
         array = newArray;
     }
