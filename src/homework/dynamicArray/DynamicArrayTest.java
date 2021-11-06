@@ -5,7 +5,7 @@ public class DynamicArrayTest {
 
         DynamicArray da = new DynamicArray();
 
-        for (int i = 7; i < 17; i++) {
+        for (int i = 0; i < 17; i++) {
             da.add(i);
         }
 
