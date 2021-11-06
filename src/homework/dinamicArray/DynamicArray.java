@@ -1,0 +1,53 @@
+package homework.dinamicArray;
+
+public class DynamicArray {
+
+    //սա մեր հիմնական մասիվն է, որտեղ պահելու ենք ավելացվող էլեմենտները
+    private int[] array = new int[10];
+
+    //սա մեր մասիվի մեջ ավելացված էլեմենտների քանակն է
+    private int size = 0;
+
+    //ստուգել, եթե մասիվի մեջ տեղ չկա-> կանչել extend()
+    //և ավելացնենք
+    public void add(int value) {
+        if (size == array.length) {
+            extend();
+            if (array.length > size) {
+                array[size++] = value;
+            }
+        } else {
+            array[size++] = value;
+        }
+    }
+
+    //1․ստեղծել հին մասիվից 10 էլեմենտ ավելի մեծ մասիվ
+    //2․ քցել հին մասիվի էլեմենտները նորի մեջ
+    //3․հին մասիվի հղումը կապենք նոր մասիվի հղման հետ
+
+    private void extend() {
+        int[] newArray = new int[array.length + 10];
+        for (int i = 0, j = 0; i < array.length; i++) {
+            newArray[j++] = array[i];
+        }
+        array = newArray;
+    }
+
+    //եթե տրված ինդեքսը մեր ունեցած մասիվի ինդեքսի սահմաներում է, վերադարձնել մասիվի index-երրորդ էլեմենտը։
+    // Հակառակ դեպքում վերադարձնել -1
+    public int getByIndex(int index) {
+        if (index >= 0 && index < size) {
+            return array[index];
+        } else {
+            System.out.println("ArrayIndexOutOfBoundsException:");
+            return -1;
+        }
+    }
+
+    //տպել մասիվի ավելացված էլեմենտնրը
+    public void print() {
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+}
