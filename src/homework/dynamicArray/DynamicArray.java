@@ -13,12 +13,9 @@ public class DynamicArray {
     public void add(int value) {
         if (size == array.length) {
             extend();
-//            if (array.length > size) {
-//                array[size++] = value;
-//            }
-        } else {
-            array[size++] = value;
         }
+        array[size++] = value;
+
     }
 
     //1․ստեղծել հին մասիվից 10 էլեմենտ ավելի մեծ մասիվ
