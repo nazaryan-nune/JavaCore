@@ -26,8 +26,8 @@ public class CharUtilTest {
 
         //5. Պետք է գրել կոդ, որը text մասիվից կստանա char[] result մասիվ, որը կլինի նույն տեքստը, առանց պռաբելների(իրար կողք կտպի barev)
         char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
-        char[] result = cU.trim(text);
-        for (char i : result) {
+        char[] temp = cU.trim(text);
+        for (char i : temp) {
             System.out.print(i);
         }
     }

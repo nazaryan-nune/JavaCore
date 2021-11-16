@@ -46,14 +46,14 @@ public class ArrayUtil {
                 count++;
             }
         }
-        int[] evenNumbers = new int[count];
+        int[] temp = new int[count];
         int index = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] != 0 && array[i] % 2 == 0) {
-                evenNumbers[index++] = array[i];
+                temp[index++] = array[i];
             }
         }
-        return evenNumbers;
+        return temp;
     }
 
 
@@ -67,14 +67,14 @@ public class ArrayUtil {
                 count++;
             }
         }
-        int[] oddNumbers = new int[count];
+        int[] temp = new int[count];
         int index = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] != 0 && array[i] % 2 != 0) {
-                oddNumbers[index++] = array[i];
+                temp[index++] = array[i];
             }
         }
-        return oddNumbers;
+        return temp;
     }
 
 
