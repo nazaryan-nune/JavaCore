@@ -1,4 +1,4 @@
-package author;
+package homework.author;
 
 import java.util.Scanner;
 

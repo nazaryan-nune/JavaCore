@@ -1,4 +1,4 @@
-package author;
+package homework.author;
 
 public class Author {
 
