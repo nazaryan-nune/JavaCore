@@ -1,6 +1,6 @@
 package chapter6.box1;
 
-//Այս կլասում հայտարարվում է օբյեկտ Box տիպի
+//Այս կլասում հայտարարվում է  Box տիպի օբյեկտ
 
 public class BoxDemo {
     public static void main(String[] args) {

@@ -1,11 +1,11 @@
 package chapter6.box4;
-//volume() մեթոդը վերադարձնում է զուգահեռագծի ծավալը
+//volume() մեթոդը վերադարձնում է զուգահեռանիստի ծավալը
 public class Box {
     double width;
     double height;
     double depth;
 
-    //արտածել  զուգահեռագծի ծավալը
+    //հաշվել և վերադարձնել զուգահեռանիստի ծավալը
     double volume() {
         return  width * height * depth;
     }

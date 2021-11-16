@@ -13,7 +13,7 @@ public class Box {
     }
 
 
-    //հատկանշել զուգահեռագծի չափերը
+    //հատկանշել զուգահեռանիստի չափումները
     void setDim(double w, double h, double d) {
         width = w;
         height = h;

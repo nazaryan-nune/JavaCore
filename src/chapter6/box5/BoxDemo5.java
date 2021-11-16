@@ -10,11 +10,11 @@ public class BoxDemo5 {
         myBox1.setDim(10, 20, 15);
         myBox2.setDim(3, 6, 9);
 
-        //ստանալ առաջին զուգահեռագծի ծավալը
+        //ստանալ առաջին զուգահեռանիստի ծավալը
         vol = myBox1.volume();
         System.out.println("Ծավալը հավասար է՝ " + vol);
 
-        //ստանալ երկրորդ զուգահեռագծի ծավալը
+        //ստանալ երկրորդ զուգահեռանիստի ծավալը
         vol = myBox2.volume();
         System.out.println("Ծավալը հավասար է՝ " + vol);
     }

@@ -16,11 +16,11 @@ public class BoxDemo2 {
         myBox2.height = 6;
         myBox2.depth = 9;
 
-        //հաշվել առաջին զուգահեռագծի ծավալը
+        //հաշվել առաջին զուգահեռանիստի ծավալը
         vol = myBox1.width * myBox1.height * myBox1.depth;
         System.out.println("Ծավալը հավասար է՝ " + vol);
 
-        //հաշվել երկրորդ զուգահեռագծի ծավալը
+        //հաշվել երկրորդ զուգահեռանիստի ծավալը
         vol = myBox2.width * myBox2.height * myBox2.depth;
         System.out.println("Ծավալը հավասար է՝ " + vol);
     }
