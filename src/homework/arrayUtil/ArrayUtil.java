@@ -110,7 +110,7 @@ public class ArrayUtil {
         for (int i = 0; i < array.length; i++) {
             average += array[i];
         }
-        return average;
+        return average/array.length;
     }
 
 
