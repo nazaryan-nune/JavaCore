@@ -1,5 +1,6 @@
 package chapter7.example1;
 
+//Ցուցադրել մեթոդների գերբեռնումը
 public class OverloadDemo {
     void test() {
         System.out.println("Պարամետրերը բացակայում են");
